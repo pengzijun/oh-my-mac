@@ -9,8 +9,13 @@ printf 'if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi\n' >> ~/
 # irb support chinese
 brew install -v readline
 export CONFIGURE_OPTS="--disable-install-doc  --with-readline-dir=$(brew --prefix readline)"
-rbenv install -kv 2.2.1
-rbenv global 2.2.1
+
+brew install -l
+echo -n "Please input ruby version "
+
+read version
+rbenv install -kv ${version}
+rbenv global ${version}
 
 # gem
 printf "gem: --no-document" >> ~/.gemrc
