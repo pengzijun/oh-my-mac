@@ -22,8 +22,6 @@ rbenv global ${version}
 
 # gem
 printf "gem: --no-document" >> ~/.gemrc
-gem sources --remove https://rubygems.org/
-gem sources -a https://ruby.taobao.org/
 gem install rails
 
 # Pow
