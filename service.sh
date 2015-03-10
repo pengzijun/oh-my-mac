@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Service
 brew cask install launchrocket
 brew install mysql

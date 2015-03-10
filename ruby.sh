@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #  rbenv
 brew install -v rbenv ruby-build rbenv-gem-rehash
 eval "$(rbenv init -)" # 待确定当前运行shell
