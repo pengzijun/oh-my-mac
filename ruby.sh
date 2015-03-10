@@ -10,7 +10,7 @@ printf 'if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi\n' >> ~/
 brew install -v readline
 export CONFIGURE_OPTS="--disable-install-doc  --with-readline-dir=$(brew --prefix readline)"
 
-brew install -l
+rbenv install -l
 echo -n "Please input ruby version "
 
 read version
