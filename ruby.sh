@@ -10,9 +10,12 @@ printf 'if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi\n' >> ~/
 brew install -v readline
 export CONFIGURE_OPTS="--disable-install-doc  --with-readline-dir=$(brew --prefix readline)"
 
+# ImageMagick
+# 安裝 ImageMagick 需先有 X11 的 support,OSX 10.8 拿掉了...
+# http://xquartz.macosforge.org/landing/
+
 rbenv install -l
 echo -n "Please input ruby version "
-
 read version
 rbenv install -kv ${version}
 rbenv global ${version}
