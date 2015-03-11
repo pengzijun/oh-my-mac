@@ -5,8 +5,6 @@ brew cask install iterm2
 brew cask install mou
 brew cask install sublime-text
 brew cask install atom
-brew cask install vagrant
-brew cask install virtualbox
 brew cask install shuttle
 brew cask install evernote
 brew cask install splayerx
@@ -31,3 +29,4 @@ baiduinput=/opt/homebrew-cask/Caskroom/baiduinput/*/安装百度输入法.app
 if [-d $baiduinput ]; then
   open $baiduinput
 fi
+
