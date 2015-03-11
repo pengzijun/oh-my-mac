@@ -24,3 +24,5 @@ brew cask install google-chrome
 brew cask install keepassx
 brew cask install sequel-pro
 brew cask install xmind
+brew cask install android-file-transfer
+
