@@ -14,6 +14,9 @@ version=$(VBoxManage -v)
 host=http://dlc-cdn.sun.com/
 filename="Oracle_VM_VirtualBox_Extension_Pack-${version/r/-}.vbox-extpack"
 dest=~/Downloads/${filename}
-curl -o ${dest} ${host}/virtualbox/${version%%r*}/${filename}
+
+if [ ! -e $dest ]; then
+  curl -o ${dest} ${host}/virtualbox/${version%%r*}/${filename}
+fi
 open $dest
 
