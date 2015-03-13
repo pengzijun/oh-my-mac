@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Command Line
+brew install tig
+
 # Software
 brew cask install iterm2
 brew cask install mou
@@ -23,6 +26,7 @@ brew cask install keepassx
 brew cask install sequel-pro
 brew cask install xmind
 brew cask install android-file-transfer
+brew cask install dash
 
 # baiduinput
 baiduinput=/opt/homebrew-cask/Caskroom/baiduinput/*/安装百度输入法.app
