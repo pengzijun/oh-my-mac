@@ -15,5 +15,5 @@ host=http://dlc-cdn.sun.com/
 filename="Oracle_VM_VirtualBox_Extension_Pack-${version/r/-}.vbox-extpack"
 dest=~/Downloads/${filename}
 curl -o ${dest} ${host}/virtualbox/${version%%r*}/${filename}
-open ~/Download/{$filename}
+open $dest
 
