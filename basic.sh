@@ -4,8 +4,8 @@
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # command line 中文显示
-printf 'export LANG="zh_CN.UTF-8"\n' >> ~/.zshrc
-printf 'export LC_ALL="zh_CN.UTF-8"' >> ~/.zshrc
+printf 'export LANG=en_US.UTF-8\n' >> ~/.zshrc
+printf 'export LC_ALL=en_US.UTF-8' >> ~/.zshrc
 
 
 # Homebrew
