@@ -2,7 +2,11 @@
 
 # Oh My Zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-printf 'export LANG=en_US.UTF-8\n' >> ~/.zshrc # TODO: 使用sed替换
+
+# command line 中文显示
+printf 'export LANG="zh_CN.UTF-8"\n' >> ~/.zshrc
+printf 'export LC_ALL="zh_CN.UTF-8"' >> ~/.zshrc
+
 
 # Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
