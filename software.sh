@@ -1,7 +1,12 @@
 #!/bin/bash
 
-# Command Line
+# git command line tools
 brew install tig
+
+# ImageMagick
+# 安裝 ImageMagick 需先有 X11 的 support,OSX 10.8 拿掉了...
+# http://xquartz.macosforge.org/landing/
+# brew install imagemagick
 
 # Software
 brew cask install iterm2

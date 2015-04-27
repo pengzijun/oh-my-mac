@@ -16,7 +16,7 @@ filename="Oracle_VM_VirtualBox_Extension_Pack-${version/r/-}.vbox-extpack"
 dest=~/Downloads/${filename}
 
 if [ ! -e $dest ]; then
-  curl -o ${dest} ${host}/virtualbox/${version%%r*}/${filename}
+  curl -o ${dest} ${host}/virtualbox/${version%%r*}/${filename} && open $dest
 fi
-open $dest
+
 

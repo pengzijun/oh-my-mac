@@ -13,20 +13,19 @@ brew install openssl libyaml libffi
 brew install -v readline
 export RUBY_CONFIGURE_OPTS="--disable-install-doc  --with-readline-dir=$(brew --prefix readline)"
 
-# ImageMagick
-# 安裝 ImageMagick 需先有 X11 的 support,OSX 10.8 拿掉了...
-# http://xquartz.macosforge.org/landing/
-
 rbenv install -l
-echo -n "Please input ruby version "
+echo -n "Please input ruby version: "
 read version
-rbenv install -kv ${version}
+rbenv install -kfv ${version}
 rbenv global ${version}
 
-# gem
-printf "gem: --no-document" >> ~/.gemrc
-gem install rails
+# Gem
+gem sources --remove https://rubygems.org/
+gem sources -a https://ruby.taobao.org
+sudo gem install rubygems-update -V -N
+update_rubygems
+gem install rails -V -N
+gem install powder -V -N
 
 # Pow
 curl -v get.pow.cx | sh
-gem install powder
