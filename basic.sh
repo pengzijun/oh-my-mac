@@ -10,7 +10,6 @@ printf 'export LC_ALL=en_US.UTF-8\n' >> ~/.zshrc
 
 # Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew doctor
 
 # Homebrew Cask
 brew install -v caskroom/cask/brew-cask
