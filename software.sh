@@ -11,8 +11,9 @@ brew install wget
 
 # Software
 brew cask install iterm2
-brew cask install mou
 brew cask install sublime-text
+brew cask install dash
+brew cask install mou
 brew cask install atom
 brew cask install shuttle
 brew cask install evernote
@@ -32,7 +33,6 @@ brew cask install keepassx
 brew cask install sequel-pro
 brew cask install xmind
 brew cask install android-file-transfer
-brew cask install dash
 brew cask install spectacle
 brew cask install the-unarchiver
 
