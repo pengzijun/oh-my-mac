@@ -32,7 +32,7 @@ gem install rails -V -N
 gem install powder -V -N
 
 # Bundle
-bundle config ‘mirror.https://rubygems.org’ ‘https://ruby.taobao.org’ 
+bundle config 'mirror.https://rubygems.org' 'https://ruby.taobao.org' 
 
 # Pow
 curl -v get.pow.cx | sh
