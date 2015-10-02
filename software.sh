@@ -14,7 +14,6 @@ brew cask install iterm2
 brew cask install dash
 brew cask install mou
 brew cask install atom
-brew cask install shuttle
 brew cask install splayerx
 brew cask install neteasemusic
 brew cask install baiduinput
@@ -25,9 +24,7 @@ brew cask install thunder
 brew cask install baiducloud
 brew cask install google-chrome
 brew cask install keepassx
-brew cask install sequel-pro
 brew cask install xmind
-brew cask install spectacle
 brew cask install the-unarchiver
 
 # baiduinput
