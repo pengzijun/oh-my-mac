@@ -2,8 +2,8 @@
 
 #  rbenv
 brew install -v rbenv ruby-build rbenv-gem-rehash
-eval "$(rbenv init -)" # 待确定当前运行shell
-printf 'if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi\n' >> ~/.zshrc
+printf 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi\n' >> ~/.zshrc
+source ~/.zshrc
 
 # ruby
 # optional, but recommended:
@@ -16,16 +16,14 @@ brew install -v readline
 rbenv install -l
 echo -n "Please input ruby version: "
 read version
-mkdir -p $(rbenv root)/cache
-
 export RUBY_CONFIGURE_OPTS="--disable-install-doc  --with-readline-dir=$(brew --prefix readline)"
 rbenv install -v ${version}
 rbenv global ${version}
 rbenv shell ${version}
 
 # Gem
-gem sources --remove https://rubygems.org
-gem sources -a https://ruby.taobao.org
+gem sources -a https://ruby.taobao.org/
+gem sources --remove https://rubygems.org/
 gem install rails -V -N
 gem install powder -V -N
 
