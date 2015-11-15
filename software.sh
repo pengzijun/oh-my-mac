@@ -2,6 +2,7 @@
 
 # git command line tools
 brew install tig
+brew install hub
 brew install wget
 
 # ImageMagick
