@@ -4,6 +4,7 @@
 brew install tig
 brew install hub
 brew install wget
+brew install vim
 
 # ImageMagick
 # 安裝 ImageMagick 需先有 X11 的 support,OSX 10.8 拿掉了...
@@ -12,7 +13,6 @@ brew install wget
 
 # Software
 brew cask install iterm2
-brew cask install dash
 brew cask install mou
 brew cask install atom
 brew cask install splayerx
@@ -20,12 +20,10 @@ brew cask install neteasemusic
 brew cask install baiduinput
 brew cask install qq
 brew cask install aliwangwang
-brew cask install libreoffice
 brew cask install thunder
 brew cask install baiducloud
 brew cask install google-chrome
 brew cask install keepassx
-brew cask install xmind
 brew cask install the-unarchiver
 
 # baiduinput
