@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #  rbenv
-brew install -v rbenv ruby-build rbenv-gem-rehash
+brew install -v rbenv ruby-build
+rbenv init
 printf 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi\n' >> ~/.zshrc
-source ~/.zshrc
 
 # ruby
 # optional, but recommended:
